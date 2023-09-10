@@ -16,7 +16,7 @@ const winner = document.querySelector(".winner");
 const weapons = ['rock', 'paper', 'scissors','lizard','spock'];
 let playerScore = 0;
 let computerScore = 0;
-let countdown = 10;
+let countdown = 30;
 let timeout;
 
 // Function to generate random weapon for computer
@@ -104,8 +104,8 @@ function updateScore(playerWeapon, computerWeapon) {
 // Function to handle player choice
 function selectWeapon() {
   clearTimeout(timeout);
-  countdownElem.innerHTML = '10';
-  countdown = 10;
+  countdownElem.innerHTML = '30';
+  countdown = 30;
   const playerWeapon = this.id;
   const computerWeapon = computerPlay();
   updateScore(playerWeapon, computerWeapon);
@@ -120,13 +120,13 @@ function startTimer() {
     const computerWeapon = computerPlay();
     updateScore(null, computerWeapon);
   } else {
-    timeout = setTimeout(startTimer, 1000);
+    timeout = setTimeout(startTimer, 3000);
   }
 }
 
 function stopTimer() {
   clearInterval(timeout);
-  countdown = 10;
+  countdown = 30;
   countdownElem.textContent = countdown;
 }
 
@@ -134,11 +134,11 @@ function stopTimer() {
 function resetGame() {
   playerScore = 0;
   computerScore = 0;
-  countdown = 10;
+  countdown = 30;
   playerScoreElem.innerHTML = 'Player: 0';
   computerScoreElem.innerHTML = 'Computer: 0';
   resultElem.innerHTML = 'Choose your weapon!';
-  countdownElem.innerHTML = '10';
+  countdownElem.innerHTML = '30';
   resultElem.style.color = '#660033';
   computerChoiceElem.innerHTML = '';
   enableOptions();
@@ -163,7 +163,7 @@ playAgainBtn.addEventListener('click', resetGame);
 
 // Start countdown timer when page loads
 countdownElem.innerHTML = countdown; // Set initial value of countdown in HTML
-timeout = setTimeout(startTimer, 1000);
+timeout = setTimeout(startTimer, 3000);
 
 
 // function updateScores(result, points) {
