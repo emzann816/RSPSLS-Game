@@ -139,6 +139,7 @@ function resetGame() {
   computerChoiceElem.innerHTML = '';
   enableOptions();
   startTimer();
+  return;
 }
 
 function disableOptions() {
