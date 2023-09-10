@@ -71,7 +71,7 @@ th table{
     color: #e74c3c;
     border-radius: 120px;
     border: 6px solid #e74c3c;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
   }
   .icon-option:hover {
@@ -86,7 +86,7 @@ th table{
     border-radius: 120px;
     border: 6px solid #f1c40f;
     cursor: pointer;
-    padding: 20px;
+    padding: 10px;
   }
 h1 {
   text-align: center;
