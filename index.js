@@ -1,7 +1,3 @@
-// function welcomeMessage() {
-//   alert("Welcome the good ol' fashion game of Rock, Paper, Scissors, Lizard and Spock! Remember the rules are simple!\nRock Beats Scissors\nScissors Beats Paper\nPaper Beats Rock");
-// }
-
 const choices = document.querySelectorAll('.choice');
 const playerScoreElem = document.querySelector('.player-score');
 const computerScoreElem = document.querySelector('.computer-score');
@@ -166,15 +162,4 @@ countdownElem.innerHTML = countdown; // Set initial value of countdown in HTML
 timeout = setTimeout(startTimer, 3000);
 
 
-// function updateScores(result, points) {
-//   if(result === 1) {
-//     playerScore += points;
-//   }
-//   if(result === 2) {
-//     computerScore += points;
-//   }
-//   if(result === 0) {
-//     computerScore += 0;
-//     playerScore += 0;
-//   }
-// }
+audioElement.play();
